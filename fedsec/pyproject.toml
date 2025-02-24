@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[project]
+name = "fedsec"
+version = "1.0.0"
+description = ""
+license = "Apache-2.0"
+dependencies = [ "flwr[simulation]>=1.15.1", "flwr-datasets[vision]>=0.5.0", "tensorflow>=2.11.1,<2.18.0",]
+
+[tool.flwr.app]
+publisher = "brahim"
+
+[tool.flwr.federations]
+default = "local-simulation"
+
+[tool.flwr.app.components]
+serverapp = "fedsec.server_RF:app"
+clientapp = "fedsec.client_RF:app"
+
+[tool.flwr.app.config]
+num-server-rounds = 3
+local-epochs = 3
+batch-size = 256
+verbose = true
+
+[tool.flwr.federations.local-simulation.options]
+num-supernodes = 5
+
+[tool.hatch.build.targets.wheel]
+packages = [ ".",]

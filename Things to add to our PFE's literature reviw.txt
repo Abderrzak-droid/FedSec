@@ -1,0 +1,38 @@
+Things to add to our PFE's literature review
+
+
+** A membership inference attack allows an adversary
+to query a trained machine learning model to predict whether or
+not a particular example was contained in the model’s training
+dataset.
+
+**Differential privacy  //
+
+** Depth in Taxonomy and Classification
+Expand Attack Categories: Include emerging attack types (e.g., membership inference, model inversion) and hybrid attacks (e.g., combined poisoning and evasion).
+
+**Defense Sub-Categorization: Classify defenses by proactive (e.g., adversarial training) vs. reactive (e.g., anomaly detection) approaches, or centralized vs. decentralized mechanisms.
+
+**Add a comparison matrix for defenses, evaluating:
+
+		--Computational overhead.
+
+		--Scalability in large-scale FL.
+
+		--Compatibility with non-IID data.
+
+		--Resistance to colluding attackers.
+
+**Reference incidents such as the 2023 MITRE APT41 report on FL vulnerabilities.
+
+**honest-but-curious
+
+**cross-silo vs cross-device
+
+**gradient inversion attack 
+
+**Add diagrams to illustrate:
+
+		--Attack lifecycles (e.g., APT stages in FL).
+
+		--Defense architectures (e.g., layered security for aggregation server
