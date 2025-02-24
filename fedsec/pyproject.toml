@@ -16,8 +16,8 @@ publisher = "brahim"
 default = "local-simulation"
 
 [tool.flwr.app.components]
-serverapp = "fedsec.server_RF:app"
-clientapp = "fedsec.client_RF:app"
+serverapp = "fedsec.server_XGBOOST:app"
+clientapp = "fedsec.client_XGBOOST:app"
 
 [tool.flwr.app.config]
 num-server-rounds = 3

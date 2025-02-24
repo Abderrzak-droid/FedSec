@@ -28,7 +28,7 @@ class FedXgbBaggingSave(FedAvg):
 
     def __init__(
         self,
-        save_dir: str = "saved_models",
+        save_dir: str = "E:\\PFE2025\\fedsec\\Attacker_XGBoost",
         evaluate_function: Optional[
             Callable[
                 [int, Parameters, Dict[str, Scalar]],

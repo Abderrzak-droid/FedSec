@@ -77,7 +77,7 @@ def server_fn(context: Context):
         # Read from config
         num_rounds = context.run_config.get("num-server-rounds", 3)
         input_shape = (20,)
-        save_dir = "E:\\PFE2025\\fedsec\\fedsec\\saved_models"
+        save_dir = "E:\\PFE2025\\fedsec\\Attacker_DNN"
         
         # Initialize model
         initial_model = load_model(input_shape=input_shape, model_type="DNN")

@@ -162,7 +162,7 @@ def preprocess_csv_files(data_files):
 
 def load_data(partition_id, num_partitions):
     """Load, preprocess, and partition the dataset."""
-    data_directory = "C:\\Users\\brahim\\Desktop\\PFE2025\\Dataset\\csv\\"
+    data_directory = "E:\\PFE2025\\Dataset\\Dataset_1\\CSV\\Attacker_Dataset"
     file_pattern = os.path.join(data_directory, "*.csv")
     data_files = glob(file_pattern)
     
@@ -217,7 +217,7 @@ def transform_dataset_to_dmatrix(data):
 
 def load_data_XGBOOST(partition_id, num_partitions):
     """Load, preprocess, and partition the dataset."""
-    data_directory = "C:\\Users\\brahim\\Desktop\\PFE2025\\Dataset\\csv\\"
+    data_directory = "E:\\PFE2025\\Dataset\\Dataset_1\\CSV\\Attacker_Dataset"
     file_pattern = os.path.join(data_directory, "*.csv")
     data_files = glob(file_pattern)
     
